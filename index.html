@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tailwind CDN Link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- External Style Sheet -->
+    <link rel="stylesheet" href="style/style.css">
+
+    <!-- Custom Tailwind Class -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navbar: '#757C8A',
+                        card: '#D9D9D9',
+                        default: '#E9E9E9'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="grid grid-cols-6">
+    <aside class="bg-navbar">
+        <!-- Main Logo -->
+        <div>
+            <img class="mx-auto my-12 w-5/12" src="images/logo/logo.png" alt="">
+        </div>
+        <!-- navbar Unorder List -->
+        <ul class="mt-16">
+            <li>Add a user<br><span class="font-light">(Randomly)</span></li>
+            <li>Double Money</li>
+            <li>Sort By Rank<br><span class="font-light">(Decending)</span></li>
+            <li>Calculate Entire Wealth</li>
+        </ul>
+        <!-- Divider -->
+        <div>
+            <img class="py-5 w-2/3 mx-auto" src="images/icons/divider.png" alt="">
+        </div>
+        <!-- Search by Catagory Unorder List -->
+        <!-- navbar  -->
+        <ul>
+            <li>Show All Billionaires</li>
+            <li>Richest by industry<br><span class="font-light">(Technology)</span></li>
+            <li>Richest by states<br><span class="font-light">(Texas)</span></li>
+        </ul>
+        </div>
+    </aside>
+    <main class="col-start-2 col-end-7">
+        <h1>Hello</h1>
+    </main>
+</body>
+
+</html>

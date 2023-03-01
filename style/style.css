@@ -1,0 +1,23 @@
+/* Import Google font */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+}
+
+li{
+    height: 60px;
+    margin: 20px 30px;
+    background-color: white;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    border-radius: 5px;
+}
