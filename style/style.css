@@ -1,9 +1,13 @@
 /* Import Google font */
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua&family=Inter&display=swap');
 
 *{
     font-family: 'Inter', sans-serif;
     color: #757C8A;
+}
+
+h1{
+    font-family: 'Inknut Antiqua', serif;
 }
 
 body{
@@ -22,4 +26,10 @@ li{
     font-weight: 900;
     border-radius: 5px;
     font-size: 20px;
+    cursor: pointer;
+}
+
+.display-data{
+    height: 80vh;
+    overflow-y: auto;
 }

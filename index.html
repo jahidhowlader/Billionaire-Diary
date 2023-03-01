@@ -14,6 +14,9 @@
     <!-- External Style Sheet -->
     <link rel="stylesheet" href="style/style.css">
 
+    <!-- Font Awesome CDN Link -->
+    <script src="https://kit.fontawesome.com/e75298b615.js" crossorigin="anonymous"></script>
+
     <!-- Custom Tailwind Class -->
     <script>
         tailwind.config = {
@@ -50,7 +53,7 @@
         <!-- Search by Catagory Unorder List -->
         <!-- navbar  -->
         <ul>
-            <li>Show All Billionaires</li>
+            <li id="Show-All-Billionaires">Show All Billionaires</li>
             <li>Richest by industry<br><span class="font-light text-base">(Technology)</span></li>
             <li>Richest by states<br><span class="font-light text-base">(Texas)</span></li>
         </ul>
@@ -59,39 +62,41 @@
     <main class="col-start-2 col-end-7">
         <header class="flex justify-between items-center my-12">
             <div>
-                <input class="border-b-2 ml-16" type="text" placeholder="Search">
+                <input id="search" class="border-b-2 ml-16" type="text" placeholder="Search">
             </div>
             <div>
                 <img class="w-7/12" src="images/logo/logo1.png" alt="">
             </div>
         </header>
 
-        <section class="px-12 bg-default">
-            <div class="relative overflow-x-auto sm:rounded-lg ">
-                <table class="w-full text-left my-12">
-                    <thead class="text-lg uppercase bg-default">
-                        <tr>
-                            <th class="px-6 py-3">
-                                <strong>Person</strong>
-                            </th>
-                            <th class="px-6 py-3">
-                                Citizenship
-                            </th>
-                            <th class="px-6 py-3">
-                                Industry
-                            </th>
-                            <th class="px-6 py-3">
-                                Rank
-                            </th>
-                            <th class="px-6 py-3">
-                                Wealth
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody id="table-body">
-
-                    </tbody>
-                </table>
+        <section class="pl-12 bg-default">
+            <div class="display-data">
+                <div class="relative overflow-x-auto sm:rounded-lg ">
+                    <table class="w-full text-left my-12 ">
+                        <thead class="text-lg uppercase bg-default ">
+                            <tr>
+                                <th class="px-6 py-3">
+                                    <strong>Person</strong>
+                                </th>
+                                <th class="px-6 py-3">
+                                    Citizenship
+                                </th>
+                                <th class="px-6 py-3">
+                                    Industry
+                                </th>
+                                <th class="px-6 py-3">
+                                    Rank
+                                </th>
+                                <th class="px-6 py-3">
+                                    City
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-body">
+    
+                        </tbody>
+                    </table>
+                </div>
             </div>
 
         </section>
@@ -101,6 +106,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- External JavaScript File -->
+    <script src="script/customApi.js"></script>
     <script src="script/app.js"></script>
 </body>
 
