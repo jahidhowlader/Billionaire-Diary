@@ -8,6 +8,9 @@
     <!-- Tailwind CDN Link -->
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- DaisyUI CDN Link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.2/dist/full.css" rel="stylesheet" type="text/css" />
+
     <!-- External Style Sheet -->
     <link rel="stylesheet" href="style/style.css">
 
@@ -34,12 +37,12 @@
             <img class="mx-auto my-12 w-5/12" src="images/logo/logo.png" alt="">
         </div>
         <!-- navbar Unorder List -->
-        <ul class="mt-16">
-            <li>Add a user<br><span class="font-light">(Randomly)</span></li>
+        <div class="mt-16">
+            <li>Add a user<br><span class="font-light text-base">(Randomly)</span></li>
             <li>Double Money</li>
-            <li>Sort By Rank<br><span class="font-light">(Decending)</span></li>
+            <li>Sort By Rank<br><span class="font-light text-base">(Decending)</span></li>
             <li>Calculate Entire Wealth</li>
-        </ul>
+        </div>
         <!-- Divider -->
         <div>
             <img class="py-5 w-2/3 mx-auto" src="images/icons/divider.png" alt="">
@@ -48,14 +51,57 @@
         <!-- navbar  -->
         <ul>
             <li>Show All Billionaires</li>
-            <li>Richest by industry<br><span class="font-light">(Technology)</span></li>
-            <li>Richest by states<br><span class="font-light">(Texas)</span></li>
+            <li>Richest by industry<br><span class="font-light text-base">(Technology)</span></li>
+            <li>Richest by states<br><span class="font-light text-base">(Texas)</span></li>
         </ul>
         </div>
     </aside>
     <main class="col-start-2 col-end-7">
-        <h1>Hello</h1>
+        <header class="flex justify-between items-center my-12">
+            <div>
+                <input class="border-b-2 ml-16" type="text" placeholder="Search">
+            </div>
+            <div>
+                <img class="w-7/12" src="images/logo/logo1.png" alt="">
+            </div>
+        </header>
+
+        <section class="px-12 bg-default">
+            <div class="relative overflow-x-auto sm:rounded-lg ">
+                <table class="w-full text-left my-12">
+                    <thead class="text-lg uppercase bg-default">
+                        <tr>
+                            <th class="px-6 py-3">
+                                <strong>Person</strong>
+                            </th>
+                            <th class="px-6 py-3">
+                                Citizenship
+                            </th>
+                            <th class="px-6 py-3">
+                                Industry
+                            </th>
+                            <th class="px-6 py-3">
+                                Rank
+                            </th>
+                            <th class="px-6 py-3">
+                                Wealth
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
     </main>
+
+    <!-- DaisyUI Script -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- External JavaScript File -->
+    <script src="script/app.js"></script>
 </body>
 
 </html>

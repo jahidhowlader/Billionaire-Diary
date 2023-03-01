@@ -3,6 +3,7 @@
 
 *{
     font-family: 'Inter', sans-serif;
+    color: #757C8A;
 }
 
 body{
@@ -20,4 +21,5 @@ li{
     align-items: center;
     font-weight: 900;
     border-radius: 5px;
+    font-size: 20px;
 }
